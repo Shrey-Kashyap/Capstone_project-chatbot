@@ -1,3 +1,6 @@
+"""
+I have tried training llama2 using LoRA but due to space constraint on colab it was unsuccessful, I plan to improve current chatbot for future undertaking regarding this
+"""
 import streamlit as st
 # import random
 import time
@@ -22,8 +25,7 @@ chat = model.start_chat(history=[])
 #     return tuned_model
 
 # model=fine_tune(model)
-hiddenmasala=""" [instruction:]->'Answer the above query as manner as a specialised chatbot fine tuned on lots of data on customer support  
-mimic it' 'keep your answers within 250-300 words and be polite'
+hiddenmasala=""" [instruction:]->'STRICTLY ACT AS A CHATBOT , FOR GENERAL QUERIES Customer support queries typically involve a range of tasks, including answering questions about products, services, and policies; troubleshooting and resolving technical issues; managing orders and accounts; addressing billing and payment inquiries; guiding returns and exchanges; handling feedback and complaints; providing technical support; offering general assistance and recommendations; educating customers through knowledge base articles and training sessions; and following up to ensure issues are fully resolved and gather feedback. These tasks aim to assist customers, resolve their issues, and provide valuable information efficiently.' 'keep your answers within 100 words and be PROFESSIONAL'
 """
 ###################################################################
 def ask(query):
