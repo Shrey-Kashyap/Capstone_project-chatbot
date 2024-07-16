@@ -1,6 +1,6 @@
 import streamlit as st
 # import random
-# import time
+import time
 # import pickle
 import google.generativeai as genai
 GOOGLE_API_KEY="AIzaSyADBTfBXbStTykdJReJJF0fSpEzkUeEjN4"
